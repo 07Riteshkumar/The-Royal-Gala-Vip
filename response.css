@@ -1,0 +1,116 @@
+body.response-page {
+    min-height: 100vh;
+    background-color: #080808;
+    color: #dddddd;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.response-card {
+    width: 100%;
+    max-width: 655px;
+    background-color: #111111;
+    border: 2px solid #d8b323;
+    border-radius: 14px;
+    padding: 55px 28px 50px;
+    text-align: center;
+}
+
+.response-card .brand {
+    color: #c92525;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.response-card h1 {
+    color: #e1b72e;
+    font-size: 36px;
+    margin-bottom: 38px;
+}
+
+.response-card h2 {
+    color: #e1b72e;
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.response-card hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 24px;
+}
+
+.response-card .event-info p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.response-card .message {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.response-card button {
+    background-color: #a80000;
+    color: #ffffff;
+    border: 1px solid #d8b323;
+    border-radius: 6px;
+    padding: 15px 26px;
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.response-card button:hover {
+    background-color: #d00000;
+}
+
+.response-card.declined {
+    border-color: #b90000;
+}
+
+.response-card.declined h2 {
+    color: #d92323;
+    margin-bottom: 40px;
+}
+
+.response-card.declined .message {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    body.response-page {
+        padding: 20px 15px;
+    }
+
+    .response-card {
+        padding: 40px 20px;
+    }
+
+    .response-card h1 {
+        font-size: 27px;
+    }
+
+    .response-card h2 {
+        font-size: 20px;
+    }
+
+    .response-card .event-info p,
+    .response-card .message {
+        font-size: 15px;
+    }
+
+    .response-card button {
+        font-size: 13px;
+        padding: 13px 18px;
+    }
+}
